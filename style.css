@@ -67,7 +67,7 @@ div.tengah {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background: url(/img/tengah.jpg) no-repeat center center;
+  background: url(img/tengah.jpg) no-repeat center center;
   background-size: cover;
 }
 
