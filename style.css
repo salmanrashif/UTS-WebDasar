@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav {
+  max-width: 100vw;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #252525;
+}
+
+nav span.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 2rem;
+}
+
+nav div.menu {
+  margin: 2rem;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+nav div.menu a.menu {
+  color: white;
+  text-decoration: none;
+}
+
+nav div.menu a.active {
+  font-weight: bold;
+}
+
+div.tengah {
+  width: 100vw;
+  height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: url(/img/tengah.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+div.tengah h2 {
+  color: white;
+  font-size: 2rem;
+  -webkit-filter: drop-shadow(0 0 10px black);
+          filter: drop-shadow(0 0 10px black);
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+div.konten {
+  background: #fff;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+
+div.konten div.barang {
+  max-width: 40vw;
+  width: 80vw;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  background: #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+div.konten div.barang img {
+  width: 15rem;
+  height: 15rem;
+}
+
+div.konten div.barang div.detail {
+  height: 15rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+div.konten div.barang div.detail a {
+  margin-left: auto;
+}
+
+div.konten div.barang div.detail a button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+}
+
+div.konten form {
+  min-width: 40vw;
+  max-width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.1));
+}
+
+div.konten form label {
+  font-size: 0.9rem;
+  margin: 0.25rem;
+}
+
+div.konten form input,
+div.konten form textarea {
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+div.konten form input:hover,
+div.konten form textarea:hover {
+  border: 1px solid #60a5fa;
+}
+
+div.konten form input:focus,
+div.konten form textarea:focus {
+  border: 1px solid #2563eb;
+}
+
+div.konten form button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+div.konten form button:hover {
+  background: #2563eb;
+}
+
+div.konten div.about {
+  max-width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  gap: 5rem;
+}
+
+div.konten div.about img {
+  width: 20vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5rem;
+}
+
+div.konten div.about div.tentang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.konten div.about div.tentang h1 {
+  margin: 1rem 0;
+}
+
+div.konten div.about div.tentang label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+div.konten div.about div.tentang span {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.footer {
+  width: 100vw;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

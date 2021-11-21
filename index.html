@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SalmanComputer</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<span class="logo">SalmanComputer</span>
+			<div class="menu">
+				<a href="/" class="menu active">Home</a>
+				<a href="/about.html" class="menu">About Us</a>
+				<a href="/contact.html" class="menu">Contact</a>
+			</div>
+		</nav>
+		<div class="tengah">
+			<h2 id="textTengah" class="hilang">Menyediakan berbagai jenis Komputer sesuai kebutuhanmu</h2>
+		</div>
+		<div class="konten">
+			<div class="barang">
+				<img src="/img/1.jpg" alt="" class="preview" />
+				<div class="detail">
+					<h2>Gaming PC Turbine X5</h2>
+					<h4>IDR 5.700.000,-</h4>
+					<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi omnis ex totam enim delectus?</span>
+					<a href="/produk/1.html"><button>Detail barang</button></a>
+				</div>
+			</div>
+			<div class="barang">
+				<img src="/img/2.jpg" alt="" class="preview" />
+				<div class="detail">
+					<h2>Gaming PC Turbine X5</h2>
+					<h4>IDR 5.700.000,-</h4>
+					<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi omnis ex totam enim delectus?</span>
+					<a href="/produk/2.html"><button>Detail barang</button></a>
+				</div>
+			</div>
+			<div class="barang">
+				<img src="/img/3.jpg" alt="" class="preview" />
+				<div class="detail">
+					<h2>Gaming PC Turbine X5</h2>
+					<h4>IDR 5.700.000,-</h4>
+					<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi omnis ex totam enim delectus?</span>
+					<a href="/produk/3.html"><button>Detail barang</button></a>
+				</div>
+			</div>
+			<div class="barang">
+				<img src="/img/4.jpg" alt="" class="preview" />
+				<div class="detail">
+					<h2>Gaming PC Turbine X5</h2>
+					<h4>IDR 5.700.000,-</h4>
+					<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi omnis ex totam enim delectus?</span>
+					<a href="/produk/4.html"><button>Detail barang</button></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer"> <span>SalmanComputer - 2021</span> <span>085817268388</span></div>
+	</body>
+
+	<script>
+		var jenisBarang = ['Komputer', 'Monitor', 'Keyboard', 'Mouse'];
+		var textTengah = document.getElementById('textTengah');
+
+		setInterval(() => {
+			jenisBarang.push(jenisBarang.shift());
+			textTengah.innerHTML = `Menyediakan berbagai jenis ${jenisBarang[1]} sesuai kebutuhanmu`;
+		}, 2000);
+	</script>
+</html>
